@@ -1,0 +1,75 @@
+<script>
+$(function () {
+$('#activiteit_toevoegen').on('click', function () {
+$("#activiteit_form").fadeToggle(250);
+});
+});
+</script>
+<div class="alles-home">
+
+
+    <!--<div class="profiel-holder">-->
+    <!--<h3 class="profiel-header1"> Mijn gegevens </h3>-->
+    <!--<h4 class="profiel-header2">Naam:</h4>-->
+    <!--<p class="profiel-content" id="naam"></p>-->
+    <!--</p>-->
+    <!--<h4 class="profiel-header2">Email: </h4>-->
+    <!--<p class="profiel-content" id="email"></p>-->
+    <!--<h4 class="profiel-header2">Telefoonnummer: </h4>-->
+    <!--<p class="profiel-content" id="telefoonnummer"></p>-->
+    <!--<h4 class="profiel-header2">Geslacht: </h4>-->
+    <!--<p class="profiel-content" id="geslacht"></p>-->
+    <!--<h4 class="profiel-header2">Leeftijd: </h4>-->
+    <!--<p class="profiel-content" id="leeftijd"></p>-->
+
+
+    <!--</div>-->
+
+
+    <div class="profile-row">
+        <div class="profiel-holder-left1">
+            <div class="empty-profile-picture">
+            </div>
+            <div class="Naam-vlak" id="naam"></div>
+            <div class="Naam-vlak" id="leeftijd"></div>
+            <div class="Naam-vlak" id="geslacht"></div>
+            <div class="Naam-vlak" id="email"></div>
+            <div class="Naam-vlak" id="telefoon"></div>
+            <a href="" class="ProfielGegevensWijzigen" data-controller="ProfielGegevensWijzigen">
+            Wijzig</a>k
+        </div>
+        <div class="profiel-holder-right">
+            <div class="clearer"></div>
+
+            <h2 class="page-title2" id="mijn-tag">Mijn tags </h2>
+            <div class="clearer"></div>
+            <ul class="mytags"></ul>
+
+            <h2 class="page-title2" id="tagID">Tags toevoegen </h2>
+            <div class="clearer"></div>
+            <ul class="tags"></ul>
+        </div>
+    </div>
+    <div class="profile-row">
+        <div class="profiel-holder-left1">
+            <h2 class="page-title2" id="mijn-matches">Mijn matches</h2>
+            <div class="clearer"></div>
+            <div class="matches"></div>
+        </div>
+        <div class="profiel-holder-right">
+            <h2 class="page-title2" id="myMatch">Mogelijke matches</h2>
+            <div class="clearer"></div>
+            <div class="match"></div>
+        </div>
+
+    </div>
+    <div class="profile-row">
+        <div class="profiel-holder-right">
+            <h2 class="page-title2" id="mijn-bestemmingen">Mijn bestemmingen </h2>
+            <br><br><br>
+            <h4>Klik op een bestemming om deze te verwijderen</h4>
+            <div class="clearer"></div>
+            <ul class="mylocations"></ul>
+        </div>
+    </div>
+</div>

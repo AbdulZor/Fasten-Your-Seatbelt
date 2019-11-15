@@ -1,0 +1,20 @@
+ <script>
+        $(function () {
+            var paddingAdapt = function () {
+                var headerHeight = $('header').height();
+                $('.alles').css({
+                    "paddingTop": headerHeight + 75,
+                });
+            };
+            $(window).resize(function () {
+                paddingAdapt();
+            });
+            paddingAdapt();
+        });
+    </script>
+    <div class="alles">
+        <div class="match-input-holder">
+
+
+        </div>
+    </div>

@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: ghostwhite;
+}
+
+
+/* achtergrond en padding van de container */
+.containerRegister {
+    padding: 16px;
+    background-color: white;
+    width: 480px;
+}
+
+#table1{
+    width: max-content;
+}
+
+/* Stijl voor registreerbutton */
+.registreerbutton {
+    background-color: #ff0031;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registreerbutton:hover {
+    opacity: 1;
+}
+
+/* Blauwe tekst voor koppelingen */
+a {
+    color: dodgerblue;
+}
+
+/*
+Grijze achtergrond en gecentreerde tekst log in tekst */
+.loginbutton {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.createbutton {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #F1F1F1;
+}

@@ -1,0 +1,135 @@
+<script>
+    $(function () {
+        $('#question1').on('click', function () {
+            $("#answer1").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question2").on('click', function () {
+            $("#answer2").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question3").on('click', function () {
+            $("#answer3").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question4").on('click', function () {
+            $("#answer4").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question5").on('click', function () {
+            $("#answer5").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question6").on('click', function () {
+            $("#answer6").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question7").on('click', function () {
+            $("#answer7").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question8").on('click', function () {
+            $("#answer8").fadeToggle(250);
+        });
+    });
+
+    $(function () {
+        $("#question9").on('click', function () {
+            $("#answer9").fadeToggle(250);
+        });
+    });
+
+    //Contact form-validation
+    //pop-up knop voor 'Verzenden'
+    function alertpopup() {
+        alert("Uw email is verzonden! U krijgt binnen 24 uur bericht van ons.")
+    }
+
+    //Check of de vereiste input van de form is ingevuld
+    function checkform(form) {
+        //Krijg all het input van de ingevulde form
+        var inputs = form.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].hasAttribute("required")) {
+                if (inputs[i].value == "") {
+                    // Als er een leegveld is meld deze alert code:
+                    alert("Vul alle vereisten velden in");
+                    return false;
+                }
+            }
+        }
+        alertpopup();
+        return true;
+    }
+</script>
+
+
+<div class="question-holder">
+    <h1 class="page-titel">Veelgestelde vragen</h1>
+    <p>
+        <strong id="question1" class="questions">Is deze website gratis?</strong><br><br><span id="answer1"
+                                                                                               class="answers">        Op dit moment is de website gratis te gebruiken.</span><br><br>
+        <strong id="question2" class="questions">
+            Ik ben mijn wachtwoord vergeten wat nu?</strong><br><br><span id="answer2" class="answers">Bij de login pagina is er een optie om op "wachtwoord
+            vergeten" te klikken,
+            hier zal u een aantal gegevens moeten invullen waarna u uw wachtwoord kunt resetten.</span><br><br><strong
+            id="question3" class="questions">Is de
+        website beschikbaar in meerdere talen?
+    </strong><br><br><span id="answer3" class="answers">Op dit moment is de website alleen beschikbaar in het Nederlands.</span><br><br><strong
+            id="question4" class="questions">Op wie is de
+        website gericht?</strong>
+        <br><br><span id="answer4"
+                      class="answers">Deze website is gericht op mensen die alleen gaan reizen.</span><br><br><strong
+            id="question5" class="questions">Is er een minimale leeftijd
+        voor de website?</strong>
+        <br><br><span id="answer5" class="answers">Nee iedereen mag deze website gebruiken.</span><br><br><strong
+            id="question6" class="questions">Hoe wordt bepaald met wie je gematched
+        wordt?</strong>
+        <br><br><span id="answer6" class="answers">Dit wordt bepaald door je locatie en door de interesses die je hebt aangegeven op je profiel.</span><br>
+        <br><strong id="question7" class="questions">Moet ik een Corendon klant zijn om deze website te
+        gebruiken?</strong><br><br><span id="answer7" class="answers">Nee iedereen kan deze
+            website gebruiken.</span>
+        <br><br><strong id="question8" class="questions">Wat als de match niet komt opdagen?</strong>
+        <br><br><span id="answer8" class="answers">Nadat de match is afgelopen kan de andere persoon beoordeelt worden met sterren, ook kan er een reden
+            worden gegeven voor de beoordeling.</span><br>
+        <br><strong id="question9" class="questions">Ik heb een klacht, waar kan ik deze
+        indienen?</strong><br><br><span id="answer9" class="answers">Dit kan via de <a class="faqa" href=""
+                                                                                       data-controller="Contact">Contact</a>
+            Pagina hier kunt u een formulier invullen of zelf een mail sturen.</span><br></p>
+</div>
+<div class="contact-form">
+    <h1 class="page-title2">Onze gegevens:</h1><br/><br/><br/>
+    <p><strong>Telefoon: </strong>020-50630530</p>
+    <p><strong>Adres: </strong>Ergens op wibautstraat</p>
+    <p><strong>Email: </strong>Tagalong@fakemail.com</p>
+</div>
+<div class="clearer"></div>
+<div class="message-form">
+    <form action="" class="submission-form" id="contact-form" method="post" role="form">
+        <input class="contact-input" id="email" name="email"  placeholder="Email" required="required">
+        <div class="clearer"></div>
+        <textarea class="bericht" id="message" name="message" placeholder="Bericht" rows="3" required="required"></textarea>
+        <div class="clearer"></div>
+        <input class="contact-button" type="submit" value="Versturen" onclick="checkform(form)">
+    </form>
+</div>
+<div class="clearer"></div>
+
+<div class="spacer"></div>
+
+
+

@@ -1,0 +1,220 @@
+#Titel {
+    font: bolder 20px Helvetica;
+    margin: auto;
+
+
+}
+
+.profiel-header1 {
+    font: bolder 20px Helvetica;
+}
+
+.profiel-header2 {
+    font: lighter 20px Helvetica;
+}
+
+.profiel-content {
+    font: 20px Helvetica;
+    margin-left: 20px;
+}
+
+.rechterbalk {
+    float: right;
+    margin: auto;
+    width: 48%;
+    height: 50%;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.linkerbalk {
+    margin-top: 34px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    border: 3px solid #DCDCDC;
+}
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.bestemmingen {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.bestemmingen li {
+    float: left;
+}
+
+.tags li {
+    float: left;
+}
+
+.tag {
+    background: #eee;
+    border-radius: 10px 0 0 10px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tag:hover {
+    background-color: #ff3b49;
+    color: white;
+}
+
+.tag:hover::after {
+    border-left-color: #ff3b49;
+}
+
+.settings {
+
+    float: right;
+    top: 8px;
+    right: 160px;
+    font-size: 18px;
+}
+
+.bestemming {
+    background: #eee;
+    border-radius: 10px 0 0 10px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+.bestemming::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.bestemming::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bestemming:hover {
+    background-color: #ff3b49;
+    color: white;
+}
+
+.bestemming:hover::after {
+    border-left-color: #ff3b49;
+}
+
+.mytag {
+    background: #eee;
+    border-radius: 10px 0 0 10px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.2s;
+}
+
+.mytag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.mytag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mytag:hover {
+    background-color: #ff3b49;
+    color: white;
+}
+
+.mytag:hover::after {
+    border-left-color: #ff3b49;
+}
+
+.ProfielGegevensWijzigen {
+    float: left;
+    text-decoration: none;
+}
+
+#account-verwijderen {
+    background-color: #ff9800;
+    width: 200px;
+    height: 50px;
+}
+

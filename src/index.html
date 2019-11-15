@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fasten Your Seatbelts</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load stylesheets -->
+    <link href="assets/css/AdminLogin.css" rel="stylesheet"/>
+    <link href="assets/css/AdminPage.css" rel="stylesheet"/>
+    <link href="assets/css/Faq.css" rel="stylesheet"/>
+    <link href="assets/css/HomePagina.css" rel="stylesheet"/>
+    <link href="assets/css/Login.css" rel="stylesheet"/>
+    <link href="assets/css/Main.css" rel="stylesheet"/>
+    <link href="assets/css/Matched.css" rel="stylesheet"/>
+    <link href="assets/css/Matching.css" rel="stylesheet"/>
+    <link href="assets/css/Profiel.css" rel="stylesheet"/>
+    <link href="assets/css/Registreer.css" rel="stylesheet"/>
+    <link href="assets/css/GegevensWijzigen.css" rel="stylesheet"/>
+    <link href="assets/css/AdminStatistieken.css" rel="stylesheet"/>
+
+    <!-- Load jQuery 3.3.1 -->
+    <script src="assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="assets/js/custom/Matched.js"></script>
+    <script src="assets/js/custom/loginbox.js"></script>
+    <script src="assets/js/custom/Menu.js"></script>
+
+    <!-- Prepare our application, load things in the proper order. -->
+    <script src="assets/js/utils/sessionManager.js"></script>
+    <script src="assets/js/utils/databaseManager.js"></script>
+    <script src="assets/js/controllers/headerController.js"></script>
+    <script src="assets/js/controllers/chatController.js"></script>
+    <script src="assets/js/controllers/faqController.js"></script>
+    <script src="assets/js/controllers/loginController.js"></script>
+    <script src="assets/js/controllers/adminHomePageController.js"></script>
+    <script src="assets/js/controllers/homepageController.js"></script>
+    <script src="assets/js/controllers/profielController.js"></script>
+    <script src="assets/js/controllers/wachtwoordvergetenController.js"></script>
+    <script src="assets/js/controllers/registreerController.js"></script>
+    <script src="assets/js/controllers/profielGegevensWijzigenController.js"></script>
+    <script src="assets/js/controllers/helpController.js"></script>
+    <script>
+        $(function () {
+            var paddingAdapt = function () {
+                var headerHeight = $('header').height();
+                $('.content').css({
+                    "paddingTop": headerHeight + 30,
+                });
+            };
+            $(window).resize(function () {
+                paddingAdapt();
+            });
+            paddingAdapt();
+        });
+    </script>
+
+    <!-- Start our application! -->
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+
+    <header class="header"></header>
+
+        <div class="content">
+            <!-- Load content -->
+        </div>
+
+</body>
+</html>

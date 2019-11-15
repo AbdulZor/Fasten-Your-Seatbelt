@@ -1,0 +1,192 @@
+<script>
+    $(function(){
+        var resize = function() {
+            var width = document.body.clientWidth;
+            if(width <= 550){
+                $('.Matches-holder').css({
+                    "transform":"scale(0.60, 0.60)",
+                    "transform-origin":"top left",
+                });
+                $('.match-center').css({
+                    "width":"90%",
+                });
+                $('header li').css({
+                    "display":"none"
+                });
+                $('header #logo').css({
+                    "margin-left":"5px"
+                })
+                $('.ham-button').css({
+                    "display":"inline"
+                })
+            }
+            else if (width >= 551){
+                $('.Matches-holder').css({
+                    "transform":"scale(1,1)",
+                });
+                $('.match-center').css({
+                    "width":"50%",
+                });
+                $('header li').css({
+                    "display":"inline"
+                });
+                $('header #logo').css({
+                    "margin-left":"50px"
+                })
+                $('.ham-button').css({
+                    "display":"none"
+                })
+            }
+        }
+        $(window).resize(function(){
+            resize();
+        });
+        resize();
+    });
+
+</script>
+<script>
+    $(function(){
+        var paddingAdapt = function() {
+            var headerHeight = $('header').height();
+            $('.match-center').css({
+                "paddingTop": headerHeight + 5,
+            });
+        };
+        $(window).resize(function(){
+            paddingAdapt();
+        });
+        paddingAdapt();
+    });
+</script>
+<div class="match-center">
+
+    <div class="container">
+        <h1 id="title-matches">Stap 2.</h1>
+        <h2 id="Aantal-matches">Kies een match!</h2>
+
+        <div class="Matches-holder">
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+            <div class="Match-box">
+                <div class="empty-profile-picture">
+                    <div class="Naam-vlak">
+                        <p class="Naam-tekst"></p>
+                    </div>
+                    <div class="Text-vlak">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

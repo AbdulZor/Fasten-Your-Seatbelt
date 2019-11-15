@@ -1,0 +1,130 @@
+.login-input{
+    font: lighter 25px "Helvetica Neue";
+    color: #484848;
+    border: none;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #f8f3f7;
+    margin: 5px;
+}
+
+.login-box-link{
+    font: lighter 18px "Helvetica Neue";
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: grey;
+}
+
+.login{
+
+}
+
+.login-box-text{
+    font: lighter 20px "Helvetica Neue";
+}
+
+.login-box-button {
+    font: lighter 25px "Helvetica Neue";
+    color: black;
+    border: none;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(255,0,2,0.60);
+    text-transform: capitalize;
+    margin: 5px;
+}
+
+.login-box-button:hover{
+    background-color: rgba(255,0,2,0.74);
+    color: white;
+}
+
+.login-box-button:active{
+    background-color: rgba(255,107,117,0.91);
+    color: white;
+}
+
+.login-box{
+    width: 520px;
+    height: fit-content;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+    padding: 15px;
+}
+
+.login-form{
+    width: 520px;
+    height: fit-content;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+    padding: 15px;
+}
+
+#wachtwoord-vergeten  {
+    position: relative !important;
+    width: auto !important;
+    right: 120px !important;
+}
+
+.login-button-test{
+    background-color: #ff3b49;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#verstuur-mail {
+    padding: 10px 18px;
+    position: relative;
+    left: 160px;
+    font: lighter 18px "Helvetica Neue";
+    margin-top: 10px;
+    height: 45px;
+    background-color: #ff3b49;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    opacity: 0.95;
+    border: none;
+    cursor: pointer;
+}
+
+#wachtwoord-annuleren{
+    position: relative;
+    height: 45px;
+    right: 160px;
+}
+
+.wachtwoord-vergeten{
+    width: 520px;
+    height: fit-content;
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+    padding: 15px;
+}

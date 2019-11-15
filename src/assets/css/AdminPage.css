@@ -1,0 +1,85 @@
+.box {
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.08);
+}
+
+.page-title2{
+    font: bolder 25px Helvetica;
+    float: left;
+}
+
+#insert-query-interesse{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+#insert-button-bestemming{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+#insert-button-admin{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.alles-admin{
+    background-color: white;
+    max-width: 600px;
+    height: fit-content;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 650px){
+    .page-titel{
+        margin-left: 20px;
+    }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.button {
+    background: white;
+}
+.box1 {
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 80px 1px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 650px){
+    .admin-functies{
+        float: left;
+        margin-right: 20px;
+    }
+}
+.admin-functies{
+    float: left;
+}
+
+.admin-stats{
+    float: left;
+}
+
+.stat-box{
+    width: 600px;
+    background-color: white;
+    height: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+}
+

@@ -1,0 +1,873 @@
+@font-face {
+    font-family: lighter Helvetica;
+    src: url("../fonts/Helvetica.ttc");
+}
+
+@font-face {
+    font-family: lighter Helvetica Neue;
+    src: url("../fonts/HelveticaNeue.ttc");
+}
+
+
+.content{
+    max-width: max-content;
+    align-content: center;
+    min-height: 100%;
+    /*padding: 200px;*/
+    margin: auto;
+    padding-top: 75px;
+}
+
+body {
+    padding: 0;
+    margin:0;
+    min-height: 100%;
+    background-color: white;
+}
+
+.background-img{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 1500px;
+    height: auto;
+    width: 100%;
+    background: url(../img/bkgrnd.jpg) 0 / cover fixed;
+    filter: saturate(120%) ;
+}
+
+.match-input-holder{
+    position: relative;
+}
+
+.blurred-mainbox{
+    background: url(../img/bkgrnd.jpg) 0 / cover fixed;
+    content: '';
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.blurred-header{
+    background: url(../img/bkgrnd.jpg) 0 / cover fixed;
+    content: '';
+    width: 150%;
+    height: 200px;
+    position: absolute;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+header {
+    overflow: hidden;
+    margin: 0 auto;
+    align-content: center;
+    width: 100%;
+    min-height: 75px;
+    position: fixed;
+    z-index: 11;
+    background: white;
+    box-shadow: 10px 10px 100px 1px rgba(0, 0, 0, 0.05);
+}
+
+header #Uitlog, #Chat, #Profiel, #AdminHomePage{
+    display: none;
+}
+
+.header2 {
+    margin: 0 auto;
+    align-content: center;
+    max-width: 1600px;
+}
+
+header a {
+    font: lighter 17px Helvetica;
+    text-decoration: none;
+    color: rgba(63,62,66,0.89);
+}
+
+header a:hover {
+    color: rgba(255, 0, 58, 0.97);
+    font: lighter 17px Helvetica;
+    text-decoration: none;
+    margin-right: 0;
+}
+
+.current {
+    color: rgba(185, 0, 41, 0.97);
+    font: bolder 17px Helvetica;
+
+}
+
+.current:hover {
+    color: rgba(255, 0, 58, 0.97);
+    font: bolder 17px Helvetica;
+}
+
+.login {
+    color: rgba(185, 0, 41, 0.97);
+    cursor: pointer;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 751px){
+    header #logo {
+        float: left;
+        padding-top: 2px;
+        margin-left: 50px;
+        margin-right: -20px;
+        margin-bottom: -25px;
+        transition: 500ms;
+    }
+    header #corendon-credit {
+        float: left;
+        margin-top: 15px;
+        margin-left: 20px;
+        transition: 800ms;
+        opacity: 100%;
+    }
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 10px 0 20px;
+        opacity: 100%;
+        transition: 500ms;
+    }
+    .hamburger-button{
+        float: right;
+        margin-top: 15px;
+        margin-right: -50px;
+        transition: 500ms;
+        opacity: 0;
+    }
+
+}
+
+form{
+    border: none;
+}
+
+@media (max-width: 750px){
+    header ul {
+        margin-top: -200px;
+        padding: 0;
+    }
+    header #logo {
+        float: left;
+        padding-top: 2px;
+        margin-left: 10px;
+        margin-bottom: -25px;
+        transition: 500ms;
+    }
+    header #corendon-credit {
+        display: none;
+    }
+    header li {
+        display: none;
+    }
+    .hamburger-button{
+        float: right;
+        margin-right: 15px;
+        margin-top: 15px;
+        transition: 500ms;
+    }
+}
+
+
+
+header #corendon-credit {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    padding-top: 30px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.center {
+    padding: 200px;
+    margin: auto;
+}
+
+footer {
+    align-content: center;
+    background-color: #464655;
+    color: #EBEBD3;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: -15px;
+    /*padding: 20px 190px 20px 190px;*/
+    display: inline-block;
+    alignment: center;
+
+}
+/*
+@media (min-height: 1300px) {
+    footer {
+        align-content: center;
+        background-color: #464655;
+        color: #EBEBD3;
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: -12px;
+        padding: 20px 190px 20px 190px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+*/
+
+.footer {
+
+}
+
+.copy-rights {
+    margin-left: 0px;
+    width: 350px;
+    float: left;
+}
+
+.SocialMedia {
+    margin-top: 15px;
+    float: left;
+    width: 800px;
+}
+
+.SocialMedia i {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.admin {
+    float: left;
+    margin-top: 25px;
+}
+
+.admin a {
+    text-decoration: underline;
+    color: #EBEBD3;
+}
+
+.clearer {
+    clear: both;
+}
+
+/* Van Abdul*/
+.container {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.alles {
+    max-width: max-content;
+    margin: 100px auto;
+    align-content: center;
+    min-height: 100%;
+}
+
+.alles-home{
+    max-width: max-content;
+    margin: 0px auto;
+
+    align-content: center;
+    height: 100%;
+}
+.match-input:hover{
+    background-color: rgba(255,255,255,0.50);
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+
+
+
+
+@media (max-width: 650px){
+    .Chat-holder{
+        text-align: center;
+        width: 650px;
+        background: white;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: -18px;
+    }
+    .alles-home{
+        width: 100%;
+    }
+    .profiel-holder-right{
+        margin-top: 10px;
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    }
+    .profiel-holder-left1{
+        margin-top: 10px;
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    }
+    .profiel-holder-left{
+        margin-top: 10px;
+        width: 400px;
+        height: fit-content;
+        padding: 20px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+    .match-input-holder{
+        width: 100%;
+        height: 400px;
+        padding-top: 5px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 0;
+        box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.30);
+        background-color: rgba(255,255,255,0.57);
+    }
+    .question-holder{
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    }
+    .contactform-holder{
+        width: 100%;
+        height: fit-content;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    .contactinformatie-holder{
+        margin-top: 10px;
+        width: 100%;
+        height: fit-content;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    .extra-question-holder{
+        margin-top: 10px;
+        width: 100%;
+        height: fit-content;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    .match-input{
+        padding-left: 20px;
+        margin-top: 5px;
+        font: lighter 25px "Helvetica Neue";
+        color: #484848;
+        border: none;
+        text-align: center;
+        height: 50px;
+        width: 90%;
+        border-radius: 10px;
+        /*background-color: #f8f8f8;*/
+        background-color: white;
+        transition: 0.2s ease-in-out;
+        -webkit-appearance: none;
+    }
+
+    .match-input-date{
+        margin-top: 5px;
+        font: lighter 25px "Helvetica Neue";
+        color: #484848;
+        border: none;
+        text-align: center;
+        height: 50px;
+        width: 45%;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        transition: 0.2s ease-in-out;
+        -webkit-appearance: none;
+    }
+    .match-input-date:hover{
+        background-color: rgba(255,255,255,0.50);
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+
+    .match-instructions{
+        font: lighter 30px "Helvetica Neue";
+        color: #484848;
+    }
+
+    .match-button{
+        font: lighter 30px "Helvetica Neue";
+        margin-top: 30px;
+        width: 300px;
+        height: 60px;
+        background-color: #ff3b49;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        opacity: 0.95;
+        border: none;
+    }
+    .contact-form{
+        margin-top: 20px;
+        width: 90%;
+        height: 200px;
+        background-color: white;
+        padding: 20px;
+    }
+    .contact-input{
+        padding-left: 20px;
+        margin-top: 30px;
+        font: lighter 20px "Helvetica Neue";
+        color: #484848;
+        border: none;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        /*background-color: #f8f8f8;*/
+        background-color: white;
+        transition: 0.2s;
+        -webkit-appearance: none;
+    }
+    .bericht{
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font: lighter 20px "Helvetica Neue";
+        border: none;
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+        /*background-color: #f8f8f8;*/
+        background-color: white;
+        -webkit-appearance: none;
+        resize: none;
+    }
+}
+
+@media (min-width: 651px){
+    .contact-input{
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font: lighter 20px "Helvetica Neue";
+        border: none;
+        text-align: center;
+        height: 40px;
+        width: 450px;
+        border-radius: 20px;
+        background-color: white;
+        transition: 0.2s;
+        -webkit-appearance: none;
+
+    }
+
+    .contact-button{
+        font: lighter 30px "Helvetica Neue";
+        margin-top: 10px;
+        height: 50px;
+        margin-bottom: 20px;
+        transition: 0.2s;
+        border: none;
+        border-radius: 15px;
+        width: 250px;
+        opacity: 1;
+        background: #ff3b49;
+        color: white;
+
+    }
+
+    .contact-button:hover{
+        cursor: pointer;
+        border-radius: 15px;
+        width: 250px;
+        opacity: 1;
+        background: #ff3b49;
+    }
+    .bericht{
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-left: 20px;
+        font: lighter 20px "Helvetica Neue";
+        border: none;
+        height: 100px;
+        width: 450px;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-appearance: none;
+        resize: none;
+    }
+    .message-form{
+        width: fit-content;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+    .contact-form{
+        background: url("../img/emptag.png") no-repeat;
+        background-size: contain;
+        width: 350px;
+        height: 300px;
+        padding-left: 50px;
+        padding-top: 50px;
+        overflow: hidden;
+        font-size: 15px;
+        transform: rotate(-10deg);
+        position: fixed;
+        float: right;
+        right: 0;
+        color: white;
+        z-index: 1;
+    }
+
+    .Chat-holder{
+        text-align: center;
+        width: 650px;
+        background: white;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: -18px;
+    }
+    .profile-row:after{
+        display: table;
+        content: "";
+        clear: both;
+    }
+    .profiel-holder-right{
+        float: right;
+        margin-top: 20px;
+        padding: 20px;
+        width: 650px;
+        max-height: 600px;
+        overflow: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .profiel-holder-left1{
+        float: left;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 20px;
+        width: 500px;
+        max-height: 600px;
+        overflow: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+    }
+    .profiel-holder-left{
+        float: left;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 20px;
+        width: 350px;
+        max-height: 600px;
+        overflow: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+    .match-input-holder{
+        width: 650px;
+        height: 400px;
+        overflow: hidden;
+        padding-top: 5px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 100px 1px rgba(0, 0, 0, 0.20);
+        text-align: center;
+        background-color: rgba(255,255,255,0.57);
+    }
+
+    .contactform-holder{
+        width: 650px;
+        height: fit-content;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        float: left;
+        margin-right: 50px;
+        padding: 15px;
+    }
+    .contactinformatie-holder{
+        width: 200px;
+        height: fit-content;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        float: right;
+    }
+    .question-holder{
+        padding: 20px;
+        width: 1000px;
+        margin-right: 50px;
+        float: left;
+        background: #ffffff
+    }
+    .extra-question-holder{
+        width: 300px;
+        height: fit-content;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px 1px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        float: left;
+    }
+    .match-input{
+        margin-top: 5px;
+        font: lighter 25px "Helvetica Neue";
+        color: #484848;
+        border: none;
+        text-align: center;
+        height: 50px;
+        width: 600px;
+        border-radius: 10px;
+        background-color: white;
+        transition: 0.2s ease-in-out;
+        -webkit-appearance: none;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    .match-input-date{
+        margin-top: 5px;
+        font: lighter 25px "Helvetica Neue";
+        color: #484848;
+        border: none;
+        text-align: center;
+        height: 50px;
+        width: 290px;
+        border-radius: 10px;
+        background-color: white;
+        transition: 0.2s;
+        -webkit-appearance: none;
+    }
+
+    .match-input-date select{
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    .match-input-date:active{
+        background-color: white;
+        border-radius: 20px;
+    }
+    .match-input-date:hover{
+        background-color: rgba(255,255,255,0.50);
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+    .match-instructions{
+        font: lighter 30px "Helvetica Neue";
+        color: #484848;
+    }
+
+    .match-button{
+        font: lighter 30px "Helvetica Neue";
+        margin-top: 30px;
+        width: 300px;
+        height: 60px;
+        background: #ff3b49;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition: 0.2s;
+        opacity: 0.95;
+        border: none;
+    }
+
+    .match-button:hover{
+        cursor: pointer;
+        border-radius: 15px;
+        width: 310px;
+        opacity: 1;
+        background: #ff3b49;
+    }
+}
+
+.chat-bubble-recieve{
+    width: fit-content;
+    height: fit-content;
+    max-width: 50%;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    float: left;
+    font: lighter 15px Helvetica;
+    vertical-align: middle;
+    margin: 2px;
+
+}
+
+.chat-bubble-send{
+    width: fit-content;
+    height: fit-content;
+    background-color: #86d9ff;
+    border-radius: 20px;
+    padding: 10px;
+    float: right;
+    font: lighter 15px Helvetica;
+    margin: 2px;
+
+}
+
+.chat-invoer{
+    grid-area: chat-invoer;
+    background: #edeef6;
+    padding: 7px;
+    margin-left: 0;
+    max-width: 800px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.15);
+}
+
+.chat-input{
+    border-radius: 10px;
+    border: none;
+    width: 75%;
+    height: 30px;
+    padding-left: 10px;
+    font: lighter 15px Helvetica;
+    transition: 0.1s ease-in;
+}
+
+.chat-input:active{
+    background: #f0f4f6;
+}
+
+.chat-send{
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    background: #86d9ff;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 7px;
+    transition: 0.1s ease-in;
+    font: lighter 15px Helvetica;
+}
+
+.chat-send:hover{
+    background: #6db0d2
+}
+
+.chat-send:active{
+    background: #edeef6;
+}
+
+.page-titel{
+    font: bolder 40px Helvetica;
+    text-align: left;
+}
+
+.bestemminginfo{
+    margin-top: 10px;
+    padding: 20px;
+    background: #eff4ff;
+    border-radius: 10px;
+    font: 20px "Helvetica Neue";
+    transition: 250ms;
+    width: 70%;
+
+}
+
+.mylocations{
+    list-style: none;
+    display: inline;
+}
+
+.bestemminginfo:hover{
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    background: rgba(255,37,33,1)
+
+}

@@ -1,0 +1,23 @@
+<h1 class="page-titel">Profiel gegevens wijzigen</h1>
+<div class="gegevenswijzigen">
+    <table class="table">
+        <p>Email</p>
+        <input type="text" id="email">
+
+        <p>Huidige wachtwoord</p>
+        <input type="password" id="wachtwoord">
+
+        <p>Nieuwe wachtwoord</p>
+        <input type="password" id="password">
+
+        <p>Herhaal wachtwoord</p>
+        <input style="float: right" type="password" id="confirm">
+    </table>
+    <button id="account-verwijderen" type="submit">Account verwijderen</button>
+    <input type="button" class="updatebutton" value="Gegevens wijzigen">
+</div>
+<script>
+    //set input values of user
+    document.getElementById("email").setAttribute("value", session.get('email'));
+
+</script>

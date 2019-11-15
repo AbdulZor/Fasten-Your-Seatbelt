@@ -1,0 +1,79 @@
+.match-center{
+    padding-top: 120px;
+    margin: auto;
+    height: fit-content;
+    width: 50%;
+}
+
+
+.profile-box{
+    float: left;
+    transform-origin: left;
+    margin-top: 10px;
+    width: 650px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.empty-profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    background-color: #eff4ff;
+    float: left;
+    text-align: center;
+}
+
+.Naam-vlak{
+    float: right;
+    width: 60%;
+    height: 30px;
+    background-color: #eff4ff;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font: lighter 20px Helvetica;
+}
+
+
+.Text-vlak{
+    padding: 2px;
+    background-color: #eff4ff;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.Naam-tekst{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font: lighter 20px Helvetica;
+}
+.Naam-tekst::selection{
+    text-decoration: none;
+}
+
+
+.match-tekst{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    max-width: 400px;
+    font: lighter 15px Helvetica;
+}
+
+.match-tekst::selection{
+    text-decoration: none;
+}
+
+#Aantal-matches{
+    font: lighter 23px Helvetica;
+}
+
+#title-matches{
+    font: bolder 40px Helvetica;
+}

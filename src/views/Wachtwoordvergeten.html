@@ -1,0 +1,30 @@
+<script>
+
+    function alertpopup() {
+alert("Email is verzonden! Bekijk uw email om een nieuw wachtwoord aan te maken")
+}
+    //Check of de vereiste input van de form is ingevuld
+    function checkform(form) {
+        //Krijg all het input van de ingevulde form
+        var inputs = form.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].hasAttribute("required")) {
+                if (inputs[i].value == "") {
+                    // Als er een leegveld is meld deze alert code:
+                    alert("Vul uw emailadres in");
+                    return false;
+                }
+            }
+        }
+        alertpopup();
+        return true;
+    }
+</script>
+
+<form action="" class="wachtwoord-vergeten" method="post" role="form">
+    <h3>Vul uw emailadres in</h3>
+
+    <input type="text" name="email" placeholder="Email" autocomplete="email" id="email-input" required="required"/>
+    <a href="" data-controller="LoginPage"><button type="button" class="annuleerbutton" id="wachtwoord-annuleren">Annuleer</button></a>
+    <input type="submit" value="Versturen" id="verstuur-mail" onclick="checkform(form)">
+</form>

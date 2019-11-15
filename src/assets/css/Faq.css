@@ -1,0 +1,39 @@
+.box1 {
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+    maring-right: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.08);
+}
+
+.box2 {
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.08);
+}
+
+.answers {
+    display: none;
+
+}
+
+.questions {
+    font: bolder 20px Helvetica;
+    color: rgba(135,185,255,0.89);
+    cursor: pointer;
+
+}
+
+a.faqa {
+    text-decoration: none;
+    color: deepskyblue;
+}
+

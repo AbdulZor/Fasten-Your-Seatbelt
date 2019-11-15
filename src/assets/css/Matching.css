@@ -1,0 +1,37 @@
+
+.matchingcontent {
+    float: left;
+    width: 500px;
+    margin-left: 320px;
+    maring-right: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 80px 1px rgba(0, 0, 0, 0.08);
+}
+h2 {
+     text-align: center;
+}
+
+
+/*CSS voor de form*/
+.form-input[type=submit] {
+    width: 140px;
+    background-color: rgba(185,0,41,0.97);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+

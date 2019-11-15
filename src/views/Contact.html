@@ -1,0 +1,52 @@
+<script language="javascript" type="text/javascript">
+    //pop-up knop voor 'Verzenden'
+    function alertpopup() {
+        alert("Uw email is verzonden! U krijgt binnen 24 uur bericht van ons.")
+    }
+
+    //Check of de vereiste input van de form is ingevuld
+    function checkform(form) {
+        //Krijg all het input van de ingevulde form
+        var inputs = form.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].hasAttribute("required")) {
+                if (inputs[i].value == "") {
+                    // Als er een leegveld is meld deze alert code:
+                    alert("Vul alle vereisten velden in");
+                    return false;
+                }
+            }
+        }
+        alertpopup();
+        return true;
+    }
+</script>
+<div>
+    <div class="alles-home">
+
+
+        <h1 class="page-titel">Neem contact met ons op</h1>
+
+        <div class="contactform-holder">
+
+
+            <form action="" class="submission-form" id="contact-form" method="post" role="form">
+                    <label for="name">Naam</label>
+                    <input id="name" name="name" type="text" placeholder="Uw naam" required="required">
+                    <label for="email">Emailadres </label>
+                    <input id="email" name="email" type="text" placeholder="Uw email" required="required">
+                    <label class="label-bericht" for="message">Bericht</label>
+                    <textarea id="message" name="message" placeholder="Voer uw bericht in" rows="3" required="required"></textarea>
+                    <input class="verstuurbutton" type="submit" value="Versturen" onclick="checkform(form)">
+            </form>
+
+        </div>
+
+        <div class="contactinformatie-holder">
+
+        </div>
+
+    </div>
+
+    <div class="clearer"></div>
+</div>

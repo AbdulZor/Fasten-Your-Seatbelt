@@ -1,0 +1,40 @@
+<script>
+    $(function () {
+        var paddingAdapt = function () {
+            var headerHeight = $('header').height();
+            $('.alles-home').css({
+                "paddingTop": headerHeight,
+            });
+        };
+        $(window).resize(function () {
+            paddingAdapt();
+        });
+        paddingAdapt();
+    });
+</script>
+<script>
+    // $( function() {
+    //     $( ".match-input-date" ).datepicker({
+    //         dateFormat: "dd/mm/yy"
+    //     });
+    // } );
+</script>
+<div class="background-img"></div>
+<div class="alles-home">
+    <div class="match-input-holder">
+        <div class="blurred-mainbox"></div>
+        <h2 class="match-instructions">Waar gaat u heen?</h2>
+        <form>
+            <select id="bestemming-select" class="match-input">
+                <option>Kies een bestemming</option>
+
+            </select>
+            <h2 class="match-instructions">Wanneer?</h2>
+            <input type="date"  id="date-start"  class="match-input-date" placeholder="Van"/>
+            <input type="date"  id="date-end"  class="match-input-date" placeholder="Tot"/>
+            <button id="insert-button-homepage" class="match-button" type="submit">Matchen</button>
+        </form>
+
+    </div>
+</div>
+</div>
